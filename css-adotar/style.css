@@ -1,0 +1,161 @@
+/*Definições iniciais do estilo global*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    text-align: center;
+    color: #47000f;
+}
+
+/*Estilos para o container dos cartões*/
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/*Estilos para os cartões individuais*/
+
+.card{
+    background-color: #e97973;
+    border: 2px solid #940020;
+    padding: 30px;
+    box-shadow: 0 2px 4px #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 2spx #5a2c2a;
+}
+
+.card p{
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+@media(max-width:768px){
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+header { 
+    background: #EA635D;/* Define a cor de fundo do cabeçalho. */
+    color: rgb(0, 0, 0); /* Define a cor do texto no cabeçalho. */
+    display: flex; /* Usa o modelo flex para o layout do cabeçalho. */
+    justify-content: space-between; /* Alinha os elementos horizontalmente com espaço entre eles. */
+    align-items: center; /* Alinha os elementos verticalmente ao centro. */
+    padding: 1rem; /* Adiciona espaçamento interno ao cabeçalho. */
+}
+
+.title {
+    
+}
+
+.logo img {
+    max-width: 150px; /* Define a largura máxima da imagem do logo. */
+}
+  
+nav ul {
+    list-style: none; /* Remove os marcadores de lista dos elementos da barra de navegação. */
+    display: flex; /* Usa o modelo flex para o layout da lista de navegação. */
+}
+  
+nav a {
+    text-decoration: none; /* Remove a decoração de link padrão. */
+    color: rgb(0, 0, 0); /* Define a cor do texto dos links de navegação. */
+    margin: 0 1rem; /* Adiciona margem horizontal aos links. */
+    transition: color 0.3s; /* Aplica uma transição suave à cor do texto ao passar o mouse. */
+}
+  
+nav a:hover {
+    color: #ad7b5e; /* Define a cor do texto dos links de navegação ao passar o mouse sobre eles. */
+}
+  
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #EA635D;
+    font-size: .9em;
+    border-radius: 5px
+}
+
+footer a:hover{
+    color: #940020;
+}
+
+.cont a{
+    text-decoration: none;
+    color: #030303;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cont p{
+    text-decoration: none;
+    color: #030303;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contatos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+ 
+}
+
+#contatos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    flex-grow: 1;
+}
+
+#contatos img {
+    width: 8%;
+    
+}
+
+#contatos div p a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #EA635D;
+    font-size: .9em;
+    border-radius: 5px;
+}
+
+#contatos div p a:hover{
+    color: #940020
+}
